@@ -86,6 +86,7 @@ const Expenses = () => {
         alert(err.message);
       });
       let storedData = [];
+      console.log(response)
       if (response.data) {
         storedData = Object.entries(response.data)
           .map(([key, value]) => ({
